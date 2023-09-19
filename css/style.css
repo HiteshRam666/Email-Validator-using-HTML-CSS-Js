@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Bodoni+Moda:ital,wght@0,400;1,900&family=Montserrat:wght@500&family=Poppins:wght@300&family=VT323&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: rgb(249, 254, 254);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 19px 12px;
+}
+.logo{
+    font-size: 25px;
+}
+.logo span{
+    font-size: 20px;
+    padding: 6px 0;
+}
+ul {
+  display: flex;
+}
+ul li {
+  list-style: none;
+  padding: 0 13px;
+  font-size: 13px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+ul > li >  a:hover{
+    color: gray;
+}
+main{
+    min-height: 100vh;
+}
+.logo img{
+    width: 30px;
+    filter: invert(1);
+}
+.container{
+    max-width: 80vw;
+    margin: auto;
+    padding: 15px;
+}
+.container > h1{
+    padding: 12px 0;
+    font-size: 40px;
+}
+input[type = 'text']{
+    min-width: 20vw;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+.btn{
+    background: black;
+    color: white;
+    padding: 9px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+footer{
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 600px){
+    .container{
+        font-size: 12px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        padding: 6px 0;
+    }
+    .logo img{
+        width: 30px;
+        filter: invert(1);
+    }
+}
